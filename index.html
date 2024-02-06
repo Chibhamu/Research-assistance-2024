@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Editors - Proofreading and Editing Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        /* WordArt-style headings */
+        .wordart {
+            font-family: 'Roboto', sans-serif;
+            font-size: 48px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #003366;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+        }
+
+        .wordart::before {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: #fff;
+            background-color: #ffcc00;
+            padding: 10px 20px;
+            transform: translateY(-100%);
+            transition: transform 0.5s ease;
+        }
+
+        .wordart:hover::before {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Logo -->
+        <div class="logo">
+            <img src="logo.png" alt="Master Editors Logo">
+        </div>
+        <!-- WordArt-style heading with animation -->
+        <h1 class="wordart" data-text="Welcome to Master Editors">Welcome to Master Editors</h1>
+        <p>Where we provide proofreading services and editing for assignments and research in various fields.</p>
+        <p>We serve clients in Namibia and South Africa.</p>
+        <p>The Master Editors Group was formed in 2018 after a successful collaborative editing of science journals, educational books, and recognition by the board of chief editors in South Africa.</p>
+        <p>We have since been involved in leading high-impact research in Zimbabwe and South Africa, offering Excel online classes, SSPP software class, data analysis, language editing, and online seminar series via Zoom.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <!-- WordArt-style heading with animation -->
+        <h2 class="wordart" data-text="Home">Home</h2>
+        <p>Welcome to Master Editors, where we provide proofreading services and editing for assignments and research in various fields.</p>
+        <!-- Picture options -->
+        <div class="picture-options">
+            <img src="proofreading.jpg" alt="Proofreading">
+            <img src="others.jpg" alt="Other Services">
+        </div>
+    </section>
+
+    <section id="services">
+        <!-- WordArt-style heading with animation -->
+        <h2 class="wordart" data-text="Services">Services</h2>
+        <ul>
+            <li>CDD Curriculum</li>
+            <li>LVO Leadership</li>
+            <li>NMQ Educational Research</li>
+            <li>LSG Education Theories</li>
+            <li>HRM</li>
+            <li>HR LLB</li>
+            <li>And others</li>
+        </ul>
+    </section>
+
+    <section id="about">
+        <!-- WordArt-style heading with animation -->
+        <h2 class="wordart" data-text="About Us">About Us</h2>
+        <p>The Master Editors Group specializes in providing proofreading and editing services for educational materials, including assignments, research papers, and books.</p>
+        <p>We are committed to delivering high-quality services to our clients in Namibia and South Africa.</p>
+    </section>
+
+    <section id="contact">
+        <!-- WordArt-style heading with animation -->
+        <h2 class="wordart" data-text="Contact">Contact</h2>
+        <p>For inquiries or to request our services, please contact us via email at <a href="mailto:mastereditors@gmail.com">mastereditors@gmail.com</a> or WhatsApp at <a href="https://wa.me/2640813087329">+264 0813087329</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Master Editors. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
